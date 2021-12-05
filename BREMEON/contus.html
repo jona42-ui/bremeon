@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="" content="">
+    <meta http-equiv="refresh" content="60">
+    <title>bremeon study solutions</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="#"><img src="#" alt="LOGO"></a>
+            <div class="navlinks" id="nav links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <li><a href="/index.html">HOME</a></li>
+                    <li><a href="/lessons.html">LESSONS</a></li>
+                    <li><a href="/about.html">ABOUT</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="/contus.html">CONTACT US</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+        <h1 class="str">TALK TO US</h1>
+        <div class="text-box">
+            <!--<h1>AINEA AND SONS COMPANY LTD</h1>
+            <P>The leading buyer and seller of cocoa in western Uganda, both wet and organic</P>-->
+            <a href="contus.html" class="hero-btn">Vist Us To Know More </a>
+        </div>
+
+    </section>
+    <section class="blog-content">
+        <div class="row">
+            <div class="blog-left">
+                <img src="/images/bgd4.png" alt="">
+
+                <div class="comment-box">
+                    <h3>Leave A Comment</h3>
+                    <form action="form-handler.php" method="post" class="comment-form">
+                        <input type="text" name="name" placeholder="Enter Name" required>
+                        <input type="email" name="email" placeholder="Enter email" required>
+                        <input type="text" name="subject" placeholder="Enter Your Subject" required>
+                        <textarea rows="8" name="message" placeholder="Your Message"></textarea>
+                        <button type="submit" class="hero-btn">POST COMMENT</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--footer-->
+        <section class="footer">
+            <h4> ABOUT US </h4>
+            <p> We are committed students persuing diffent enginering courses<br> at Makerere University who through sharing this content is <br>our desire to give vacasist a start point</p>
+            <div class="icons">
+                <i class="fa fa-facebook>,"></i>
+                <i class="fa fa-twitter>,"></i>
+                <i class="fa fa-whatsapp>,"></i>
+                <i class="fa fa-email>,"></i>
+            </div>
+            <p>made with <i class="fa fa-heart-o>,">love</i> by BBEN</p>
+        </section>
+        <!---java script--->
+        <script>
+            var navlinks = document.getElementById("nav links");
+
+            function showmenu() {
+                navlinks.style.right = "0";
+            }
+
+            function hidemenu() {
+                navlinks.style.right = "-200px";
+            }
+        </script>
+    </section>
+</body>
+
+</html>
